@@ -43,6 +43,9 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblGiocatore = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnEsci)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn10)).BeginInit();
@@ -50,6 +53,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRigioca
@@ -142,6 +147,7 @@
             this.btnEsci.BackColor = System.Drawing.Color.Transparent;
             this.btnEsci.BackgroundImage = global::BlackjackThomas.Properties.Resources.fiches_Nero;
             this.btnEsci.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEsci.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnEsci.Location = new System.Drawing.Point(1270, 663);
             this.btnEsci.Name = "btnEsci";
             this.btnEsci.Size = new System.Drawing.Size(70, 70);
@@ -155,6 +161,7 @@
             this.btn5.BackColor = System.Drawing.Color.Transparent;
             this.btn5.BackgroundImage = global::BlackjackThomas.Properties.Resources.fiches_Blu;
             this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btn5.Location = new System.Drawing.Point(966, 663);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(70, 70);
@@ -167,6 +174,7 @@
             this.btn10.BackColor = System.Drawing.Color.Transparent;
             this.btn10.BackgroundImage = global::BlackjackThomas.Properties.Resources.fiches_Verde;
             this.btn10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btn10.Location = new System.Drawing.Point(1042, 663);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(70, 70);
@@ -179,6 +187,7 @@
             this.btn25.BackColor = System.Drawing.Color.Transparent;
             this.btn25.BackgroundImage = global::BlackjackThomas.Properties.Resources.fiches_Grigio;
             this.btn25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btn25.Location = new System.Drawing.Point(1118, 663);
             this.btn25.Name = "btn25";
             this.btn25.Size = new System.Drawing.Size(70, 70);
@@ -191,6 +200,7 @@
             this.btn50.BackColor = System.Drawing.Color.Transparent;
             this.btn50.BackgroundImage = global::BlackjackThomas.Properties.Resources.fiches_Viola;
             this.btn50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btn50.Location = new System.Drawing.Point(1194, 663);
             this.btn50.Name = "btn50";
             this.btn50.Size = new System.Drawing.Size(70, 70);
@@ -203,7 +213,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::BlackjackThomas.Properties.Resources.Back;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(18, 45);
+            this.pictureBox6.Location = new System.Drawing.Point(18, 59);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(80, 100);
             this.pictureBox6.TabIndex = 13;
@@ -227,11 +237,47 @@
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImage = global::BlackjackThomas.Properties.Resources.Back;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(104, 45);
+            this.pictureBox7.Location = new System.Drawing.Point(104, 59);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(80, 100);
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::BlackjackThomas.Properties.Resources.Back;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(1248, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 100);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblGiocatore
+            // 
+            this.lblGiocatore.AutoSize = true;
+            this.lblGiocatore.BackColor = System.Drawing.Color.Transparent;
+            this.lblGiocatore.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGiocatore.ForeColor = System.Drawing.Color.White;
+            this.lblGiocatore.Location = new System.Drawing.Point(1144, 9);
+            this.lblGiocatore.Name = "lblGiocatore";
+            this.lblGiocatore.Size = new System.Drawing.Size(0, 33);
+            this.lblGiocatore.TabIndex = 17;
+            this.lblGiocatore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::BlackjackThomas.Properties.Resources.Back;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(1162, 59);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 100);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
             // 
             // Gioca
             // 
@@ -240,6 +286,9 @@
             this.BackgroundImage = global::BlackjackThomas.Properties.Resources.blackjackSfondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1352, 745);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblGiocatore);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox6);
@@ -265,6 +314,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,5 +338,8 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblGiocatore;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

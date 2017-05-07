@@ -63,12 +63,13 @@
             // txtGiocatore
             // 
             this.txtGiocatore.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtGiocatore.Font = new System.Drawing.Font("Century", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiocatore.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiocatore.Location = new System.Drawing.Point(509, 673);
             this.txtGiocatore.Multiline = true;
             this.txtGiocatore.Name = "txtGiocatore";
-            this.txtGiocatore.Size = new System.Drawing.Size(316, 32);
+            this.txtGiocatore.Size = new System.Drawing.Size(316, 39);
             this.txtGiocatore.TabIndex = 2;
+            this.txtGiocatore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblGiocatore
             // 

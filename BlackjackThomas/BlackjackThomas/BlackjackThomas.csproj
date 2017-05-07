@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Carta.cs" />
+    <Compile Include="DealerPointsOutOfRangeException.cs" />
     <Compile Include="Gioca.cs">
       <SubType>Form</SubType>
     </Compile>

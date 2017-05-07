@@ -14,6 +14,7 @@ namespace BlackjackThomas
     {
         public string nomeGiocatore;
         public int soldiIniziali = 5000;
+
         public Inizio()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace BlackjackThomas
             Gioca newForm = new Gioca(nomeGiocatore, soldiIniziali);
             newForm.Show();
         }
-
+        //botte per l'uscita del programma
         private void btnEsci_Click(object sender, EventArgs e)
         {
             Close();

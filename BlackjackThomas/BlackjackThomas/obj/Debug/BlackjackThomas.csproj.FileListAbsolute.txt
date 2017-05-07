@@ -1,1 +1,10 @@
 C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\bin\Debug\BlackjackThomas.exe.config
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\obj\Debug\BlackjackThomas.csprojResolveAssemblyReference.cache
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\obj\Debug\BlackjackThomas.Gioca.resources
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\obj\Debug\BlackjackThomas.Inizio.resources
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\obj\Debug\BlackjackThomas.Properties.Resources.resources
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\obj\Debug\BlackjackThomas.csproj.GenerateResource.Cache
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\bin\Debug\BlackjackThomas.exe
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\bin\Debug\BlackjackThomas.pdb
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\obj\Debug\BlackjackThomas.exe
+C:\Users\towen\Documents\ITS\C# Framework .NET\esercizi\Black_Jack\BlackjackThomas\BlackjackThomas\obj\Debug\BlackjackThomas.pdb

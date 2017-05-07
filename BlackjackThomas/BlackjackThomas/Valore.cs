@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlackjackThomas
 {
+    //dichiaro il valore di ciascuna carta
     public enum Valore
     {
         Asso,
@@ -19,6 +20,6 @@ namespace BlackjackThomas
         Nove,
         Jack,
         Regina,
-        re
+        Re
     }
 }

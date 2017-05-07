@@ -6,17 +6,50 @@ using System.Threading.Tasks;
 
 namespace BlackjackThomas
 {
-    class Carta
+    //dato che il programma legge come primo numero l'asso quindi '0' riassegno i valori corretti per ciascuna carta
+    public class Carta
     {
-        public string suit { set; get; }
-        public int value { set; get; }
-        public int card_number { set; get; }
+        public Suit seme { set; get; }
+        public Valore valore { set; get; }
 
-        public Carta()
+        public Carta(Suit seme, Valore valore)
         {
-            value = -1;
-            suit = "";
-            card_number = -1;
+            this.seme = seme;
+            this.valore = valore;
+        }
+
+        public int CalcolaValoreCarta()
+        {
+            int valueInt = 0;
+            switch (valore)
+            {
+                case Valore.Due: valueInt = 2;
+                    break;
+                case Valore.Tre: valueInt = 3;
+                    break;
+                case Valore.Quattro: valueInt = 4;
+                    break;
+                case Valore.Cinque: valueInt = 5;
+                    break;
+                case Valore.Sei: valueInt = 6;
+                    break;
+                case Valore.Sette: valueInt = 7;
+                    break;
+                case Valore.Otto: valueInt = 8;
+                    break;
+                case Valore.Nove: valueInt = 9;
+                    break;
+                case Valore.Jack: valueInt = 10;
+                    break;
+                case Valore.Regina: valueInt = 10;
+                    break;
+                case Valore.Re: valueInt = 10;
+                    break;
+                case Valore.Asso: valueInt = 11;
+                    break;
+            }
+            return valueInt;
         }
     }
 }
+        
