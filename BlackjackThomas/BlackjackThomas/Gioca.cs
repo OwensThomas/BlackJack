@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlackjackThomas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,8 @@ namespace BlackjackThomas
     public partial class Gioca : Form
     {
         private Mazzo mazzo;
+        private List<Carta> ManoDealer;
+     //   private List<carta> pictureBoxB1;
         private string nomeGiocatore;
         private int numPictureBoxGiocatore = 0;
         private int numPictureBoxBanco = 0;
@@ -26,18 +29,40 @@ namespace BlackjackThomas
         public Gioca(string nomeGiocatore, int soldiIniziali)
         {
             InitializeComponent();
-            lblGiocatore.Text += (nomeGiocatore.ToString() != "");
-        }
-        private void CaricaGioca(object sender, EventArgs e)
-        {
-            mazzo = new Mazzo();
-            mazzo.MescolaMazzo();
-            btnCarta.Enabled = false;
-            btnResta.Enabled = false;
-            btnRigioca.Enabled = false;
-          //  lblSoldi.Text = soldi.ToString();
+            lblGiocatore.Text = nomeGiocatore;
+            lblSoldi.Text = soldiIniziali.ToString();
 
         }
+
+        private void Gioca_Load(object sender, EventArgs e)
+        {
+
+            mazzo = new Mazzo();
+            mazzo.MescolaMazzo();
+            ManoGiocatore = new List<Carta>();
+           // pictureBoxB1 = new List<Label>();
+
+            Carta carta1 = mazzo.PescaCarta();
+            btnCarta.Visible = false;
+            btnResta.Visible = false;
+            btnRigioca.Enabled = true;
+            btnAsso1.Visible = false;
+            btnAsso11.Visible = false;
+            btnDoppio.Visible = false;
+            btnSplit.Visible = false;
+
+
+            ManoGiocatore.Add(carta1);
+
+            Label lblcata1 = new Label();
+            string nomeimg = "../" + carta1.ToString() + ".bmp";
+            Image imgcarta1 = Image.FromFile(nomeimg);
+            lblcarta1.Image = imgcarta1;
+
+        }
+
+
+
 
 
 
@@ -46,5 +71,32 @@ namespace BlackjackThomas
         {
             Close();
         }
+
+
+        private void pictureBoxB1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRigioca_Click(object sender, EventArgs e)
+        {
+            mazzo = new Mazzo();
+            mazzo.MescolaMazzo();
+
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            btn5.Enabled = true;
+            btn10.Enabled = true;
+            btn25.Enabled = true;
+            btn50.Enabled = true;
+            btnRigioca.Enabled = true;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

@@ -9,30 +9,38 @@ namespace BlackjackThomas
     public class Mazzo
     {
         public List<Carta> carte = new List<Carta>();
-        private const int CarteMazzo = 52;
 
         public void MescolaMazzo()
         {
-            int num,i;
-            num = 0;
+            
             Random rnd = new Random();
-            Carta tmp;
-
-            for (i=0; i<num; i++)
+            int num = rnd.Next(50, 100);
+            int posizione1;
+            int posizione2;
+            for (int i=0; i<num; i++)
             {
-                int id1 = rnd.Next(0, carte.Count);
-                int id2 = rnd.Next(0, carte.Count);
-                tmp = carte[id1];
-                carte[id1] = carte[id2];
-                carte[id2] = tmp;
+                posizione1 = rnd.Next(carte.Count);
+                do
+                {
+                    posizione2 = rnd.Next(carte.Count);
+                }
+                while (posizione1 == posizione2);
+
+                Carta cartaTemp = carte[posizione1];
+                carte[posizione1] = carte[posizione2];
+                carte[posizione2] = cartaTemp;
             }
         }
 
         public Carta PescaCarta()
         {
-            Carta NuovaCarta = carte.First();
-            carte.Remove(carte.First());
+            Carta NuovaCarta = carte[carte.Count-1];
+            carte.RemoveAt(carte.Count-1);
             return NuovaCarta;
+        }
+        public int CarteMazzo()
+        {
+            return carte.Count;
         }
     }
 }

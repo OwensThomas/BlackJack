@@ -37,11 +37,12 @@
             // btnGioca
             // 
             this.btnGioca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGioca.AutoSize = true;
             this.btnGioca.Font = new System.Drawing.Font("Century", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGioca.ForeColor = System.Drawing.Color.DarkRed;
             this.btnGioca.Location = new System.Drawing.Point(12, 687);
             this.btnGioca.Name = "btnGioca";
-            this.btnGioca.Size = new System.Drawing.Size(151, 46);
+            this.btnGioca.Size = new System.Drawing.Size(151, 51);
             this.btnGioca.TabIndex = 0;
             this.btnGioca.Text = "GIOCA";
             this.btnGioca.UseVisualStyleBackColor = true;
@@ -50,11 +51,12 @@
             // btnEsci
             // 
             this.btnEsci.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEsci.AutoSize = true;
             this.btnEsci.Font = new System.Drawing.Font("Century", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEsci.ForeColor = System.Drawing.Color.DarkRed;
             this.btnEsci.Location = new System.Drawing.Point(1219, 687);
             this.btnEsci.Name = "btnEsci";
-            this.btnEsci.Size = new System.Drawing.Size(121, 46);
+            this.btnEsci.Size = new System.Drawing.Size(121, 51);
             this.btnEsci.TabIndex = 1;
             this.btnEsci.Text = "ESCI";
             this.btnEsci.UseVisualStyleBackColor = true;
@@ -88,6 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::BlackjackThomas.Properties.Resources.blackjackSfondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1352, 745);
@@ -96,7 +99,7 @@
             this.Controls.Add(this.btnEsci);
             this.Controls.Add(this.btnGioca);
             this.Name = "Inizio";
-            this.Text = "Blackjack";
+            this.Text = "BlackJack";
             this.ResumeLayout(false);
             this.PerformLayout();
 

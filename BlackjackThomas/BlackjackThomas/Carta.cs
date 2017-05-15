@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +50,11 @@ namespace BlackjackThomas
                     break;
             }
             return valueInt;
+        }
+
+        public override string ToString()
+        {
+            return "" + valore + seme;
         }
     }
 }
